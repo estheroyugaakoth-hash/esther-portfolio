@@ -1,0 +1,464 @@
+/* 1. General page styling */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f7fb;
+    color: #263247;
+    line-height: 1.7;
+}
+
+/* 2. Header and welcome section */
+header {
+    background: linear-gradient(135deg, #102a43, #176b75);
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+header h1 {
+    color: white;
+    font-size: 42px;
+    margin: 10px 0;
+}
+
+header p {
+    color: #e6f4f5;
+    font-size: 18px;
+    max-width: 700px;
+    margin: 10px auto;
+}
+
+#welcome {
+    color: white;
+}
+
+/* 3. Navigation bar */
+#links,
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #102a43;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 16px;
+    margin: 0;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #176b75;
+    color: white;
+    text-decoration: none;
+}
+
+/* 4. Main content */
+main {
+    width: 90%;
+    max-width: 1100px;
+    margin: 35px auto;
+}
+
+section {
+    background-color: white;
+    border: 1px solid #e0e7ef;
+    border-radius: 12px;
+    margin: 25px 0;
+    padding: 30px;
+    box-shadow: 0 4px 14px rgba(16, 42, 67, 0.06);
+}
+
+h2 {
+    color: #176b75;
+    font-size: 28px;
+    text-align: left;
+    margin-top: 0;
+}
+
+h3 {
+    color: #102a43;
+    font-size: 21px;
+}
+
+p {
+    font-size: 17px;
+    max-width: 800px;
+    margin: 12px 0;
+    padding: 0;
+    height: auto;
+    text-align: left;
+}
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/* 5. Links and buttons */
+a {
+    color: #087e8b;
+    font-weight: bold;
+}
+
+main a:hover {
+    color: #102a43;
+}
+
+header a,
+button {
+    display: inline-block;
+    background-color: #16a6a1;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 12px 20px;
+    margin: 10px 6px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+header a:hover,
+button:hover {
+    background-color: #087e8b;
+    color: white;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+/* 6. Project boxes */
+.box {
+    background-color: #edf8f8;
+    border: 1px solid #c6e8e7;
+    border-radius: 10px;
+    padding: 22px;
+    margin: 18px 0;
+}
+
+/* 7. Contact form */
+form {
+    max-width: 650px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-top: 18px;
+    margin-bottom: 6px;
+}
+
+input,
+textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font: inherit;
+    border: 1px solid #bdcbd8;
+    border-radius: 6px;
+    background-color: #fff;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #16a6a1;
+    border-color: #087e8b;
+}
+
+/* 8. Footer */
+footer {
+    background-color: #102a43;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 40px;
+}
+
+footer p {
+    color: white;
+    max-width: none;
+    margin: 0;
+    text-align: center;
+}
+
+/* 9. Smaller screens, including phones */
+@media (max-width: 600px) {
+    header {
+        padding: 40px 15px;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    main {
+        width: 94%;
+        margin: 20px auto;
+    }
+
+    section {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        padding: 9px 10px;
+    }
+}
+
+/* HOMEPAGE HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    background: linear-gradient(135deg, #102a43, #087e8b);
+    color: white;
+    padding: 60px 8%;
+    min-height: 450px;
+    overflow: hidden;
+    flex-direction: row;
+}
+
+/* INTRODUCTION ON THE LEFT */
+.hero-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.hero-text h1 {
+    color: white;
+    font-size: 42px;
+    text-align: left;
+    margin: 15px 0;
+}
+
+.hero-text p {
+    color: #e6f4f5;
+    font-size: 18px;
+    max-width: 550px;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 15px 0;
+    text-align: left;
+}
+
+.hero-text a {
+    display: inline-block;
+    background-color: #16a6a1;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    margin: 12px 8px 0 0;
+    border-radius: 8px;
+    transition: background-color 0.3s ease,
+                transform 0.3s ease;
+}
+
+.hero-text a:hover {
+    background-color: #20c5bd;
+    color: #102a43;
+    transform: translateY(-3px);
+}
+
+/* YOUR PHOTO ON THE RIGHT */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 0;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 380px;
+    height: 350px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 45% 45% 20px 20px;
+    border: 5px solid #16a6a1;
+    box-shadow: 0 0 30px rgba(22, 166, 161, 0.4);
+}
+
+/* MOBILE PHONE LAYOUT */
+@media (max-width: 700px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 40px 6%;
+        gap: 25px;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .hero-text p {
+        text-align: center;
+    }
+
+    .hero-image img {
+        max-width: 280px;
+        height: 300px;
+    }
+
+}
+
+/* SKILLS HIGHLIGHTS SECTION */
+#skills-preview {
+    text-align: center;
+}
+
+#skills-preview h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#skills-preview > p {
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+/* Arrange the skill cards */
+.skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual skill cards */
+.skill-card {
+    flex: 1 1 200px;
+    max-width: 250px;
+    background-color: #edf8f8;
+    border: 1px solid #c6e8e7;
+    border-radius: 12px;
+    padding: 22px;
+    text-align: center;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.skill-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(16, 42, 67, 0.12);
+}
+
+.skill-card h3 {
+    color: #176b75;
+    font-size: 19px;
+}
+
+.skill-card p {
+    font-size: 15px;
+    text-align: center;
+    margin: 10px auto 0;
+}
+
+/* Phone screens */
+@media (max-width: 600px) {
+    .skill-card {
+        flex: 1 1 100%;
+        max-width: none;
+    }
+}
+
+/* Featured Projects Section */
+#featured-projects {
+    padding: 40px 20px;
+    background-color: #f4f7fb;
+    text-align: center;
+}
+
+/* Arrange project cards */
+.project-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* Individual project cards */
+.project-card {
+    background-color: white;
+    width: 300px;
+    padding: 25px;
+    border: 1px solid #dddddd;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Project titles */
+.project-card h3 {
+    color: #173b68;
+    font-size: 21px;
+}
+
+/* Project descriptions */
+.project-card p {
+    color: #444444;
+    font-size: 16px;
+    line-height: 1.6;
+    height: auto;
+    max-width: 100%;
+    padding: 0;
+    margin: 12px 0;
+}
+
+/* Hover effect */
+.project-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+/* Project buttons */
+.project-button {
+    display: inline-block;
+    background-color: #173b68;
+    color: white;
+    padding: 12px 20px;
+    margin-top: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.project-button:hover {
+    background-color: #2878c7;
+    color: white;
+}
+
